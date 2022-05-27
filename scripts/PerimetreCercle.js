@@ -1,6 +1,6 @@
 "use strict";
 
-class Perimetre
+class PerimetreCercle
 {
     constructor()
     {

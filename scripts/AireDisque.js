@@ -1,6 +1,6 @@
 "use strict";
 
-class Aire
+class AireDisque
 {
     constructor()
     {

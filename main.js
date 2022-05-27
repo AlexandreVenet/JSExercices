@@ -1,6 +1,6 @@
 let DOMmain;
 let DOMScriptObjects;
-let titleToDisplay;
+let titleToDisplay, subTitleToDisplay;
 
 
 // Lorsque le DOM est chargé
@@ -26,6 +26,7 @@ function ClickNav(e)
     let link = e.target.closest("A");
     let datasetExo = link.dataset.exo;
     titleToDisplay = link.text;
+    subTitleToDisplay = link.title;
 
     // eval(`${datasetExo}("${link.text}");`); // lancer une fonction par le nom avec un paramètre
 
@@ -95,7 +96,7 @@ function AddHTML(texte, colorClass = null)
     // Afficher en bas de la div et scroller
     DOMmain.innerHTML += 
     `<div${couleur}>
-        <h2>${titleToDisplay}</h2>
+        <h2>${titleToDisplay}<span> - ${subTitleToDisplay}</span></h2>
         <p>${texte}</p>
     </div>`;
 
