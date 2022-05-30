@@ -13,7 +13,7 @@ class Interets
         let tauxInteret = SaisirNombre("Veuillez entrer un taux d'intérêt en %.");
         let annees = SaisirNombre("Veuillez entrer un nombre d'années.");
 
-        let capitalFinal = capitalInitial * Math.pow((1+tauxInteret/100),annees);
+        let capitalFinal = capitalInitial * Math.pow(1+tauxInteret/100,annees);
         let interetsFinal = capitalFinal - capitalInitial;
         
         AddHTML(`Entrée : ${capitalInitial}€ initial, taux à ${tauxInteret}%, pendant ${annees} année(s).

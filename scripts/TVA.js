@@ -16,6 +16,8 @@ class TVA
         let totalTVA = montantHT * tauxTVANorm;
         let totalTTC = montantHT + totalTVA;
 
-        AddHTML(`Entrée : ${montantHT}€ HT, TVA à ${tauxTVA}%.<br>Total TVA : ${totalTVA}€<br>Total TTC : ${totalTTC}€`);    
+        AddHTML(`Entrée : ${montantHT}€ HT, TVA à ${tauxTVA}%.
+        <br>Total TVA : ${totalTVA}€
+        <br>Total TTC : ${totalTTC}€`);    
     }
 }
