@@ -151,5 +151,8 @@ function SaisirChaine(texte)
 function Arrondir(nbre, decimales)
 {
     decimales = Math.pow(10, decimales);
-    return Math.round(nbre * decimales) / decimales;
+    return Math.round((nbre + Number.EPSILON) * decimales) / decimales;
+    // Number.EPSILON = variable d'ajustement pour la précision
+
+    // Pour la représentation texte uniquement, il existe toFixed().
 }
