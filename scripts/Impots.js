@@ -40,7 +40,7 @@ class Impots
         valeur += this.CalculValeurParSeuils(montant, 10226, 26070, 11);
         valeur += this.CalculValeurParSeuils(montant, 26071, 74545, 30);
         valeur += this.CalculValeurParSeuils(montant, 74546, 160336, 41);
-        valeur += this.CalculValeurParSeuils(montant, 160337, Number.POSITIVE_INFINITY/*Math.Infinity*/, 45);
+        valeur += this.CalculValeurParSeuils(montant, 160337, Number.POSITIVE_INFINITY, 45); // ou Math.Infinity
 
 
         // Multiplier par le nombre de parts
