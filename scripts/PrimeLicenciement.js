@@ -23,11 +23,11 @@ class PrimeLicenciement
         let primeAnciennete = 0;
         if(anciennete >= 1 && anciennete <= 10)
         {
-            primeAnciennete = dernierSalaire * anciennete / 2;
+            primeAnciennete = (dernierSalaire / 2) * anciennete;
         }
         else if(anciennete > 10)
         {
-            primeAnciennete = (dernierSalaire * anciennete / 2) + (dernierSalaire * (anciennete - 10));
+            primeAnciennete = (dernierSalaire / 2) * 10 + (dernierSalaire * (anciennete - 10));
         }
 
         // Age
