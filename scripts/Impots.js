@@ -20,6 +20,10 @@ class Impots
 
         // Calcul des parts 
         let nbreParts = nbreAdultes;
+        if(nbreAdultes == 1) // parent isolé
+        {
+            nbreParts += 0.5; // https://www.service-public.fr/particuliers/vosdroits/F34328
+        }
         
         if(nbreEnfants > 2)
         {
@@ -49,7 +53,8 @@ class Impots
 
         // Arrondir 
         impot = Arrondir(impot,0);
-
+        // Imprécision de JS pour les décimales
+        
 
         AddHTML(`<a href="https://www.economie.gouv.fr/particuliers/tranches-imposition-impot-revenu" target="_blank" title="Référence economie.gouv">Référence economie.gouv</a><br>
         Revenu net = ${revenuNet}€, adultes = ${nbreAdultes}, enfants = ${nbreEnfants}<br>
