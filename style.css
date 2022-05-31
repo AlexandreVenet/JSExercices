@@ -132,6 +132,8 @@ main div.colorError:last-child
 img
 {
     margin-top:1em;
+    width:100%;
+    max-width: 500px;
 }
 main a
 {
