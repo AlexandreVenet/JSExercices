@@ -50,7 +50,7 @@ class Notes
         <ul>
             <li class="vert">Meilleure note = ${Math.max(...toutesNotes)}/20</li>
             <li class="rouge">Pire note = ${Math.min(...toutesNotes)}/20</li>
-            <li>Moyenne = ${moyenne}/20</li>
+            <li>Moyenne = ${Arrondir(moyenne,2)}/20</li>
         </ul>`;
 
         // console.log(chaine);
