@@ -13,11 +13,9 @@ class EntiersConsecutifs
         nbre = Math.abs(Math.trunc(nbre));
 
         let DOMChaine = "<ul>\n";
-        
-        let i = 1;
 
-        while(i < nbre)
-        {
+        for (let i = 1; i < nbre; i++) {
+            
             let iterateur = i;
             let valeur = 0;
             let chaine = "";
@@ -37,12 +35,11 @@ class EntiersConsecutifs
                 DOMChaine += `\t<li>${chaine}</li>\n`;
             }
 
-            i++;
         }
 
         DOMChaine += "</ul>";
         
-        AddHTML(`Liste d'entiers chaînés dont la somme égale à : ${nbre}<br>${DOMChaine}`);
+        AddHTML(`Liste d'entiers chaînés dont la somme égale : ${nbre}.<br>${DOMChaine}`);
         
     }
 }
