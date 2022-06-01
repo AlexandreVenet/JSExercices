@@ -139,3 +139,19 @@ main a
 {
     color:cornflowerblue;
 }
+ul li, ol li
+{
+    margin-left:2em;
+}
+ul, ol
+{
+    margin:0.5em 0;
+}
+.rouge
+{
+    color: crimson;
+}
+.vert
+{
+    color:forestgreen;
+}
