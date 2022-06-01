@@ -9,7 +9,7 @@ class Distributeur
 
     Init()
     {
-        let nbre = SaisirNombre("Veuillez choisir entre Jus (1), Eau (2) ou Café (3) en entrant le nombre correspondant.");
+        let nbre = SaisirNombre("Veuillez choisir un produit en entrant le nombre correspondant : \n\tJus (1), \n\tEau (2),\n\tCafé (3).");
         
         switch (nbre) {
             case 1:

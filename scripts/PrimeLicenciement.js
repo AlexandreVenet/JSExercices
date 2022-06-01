@@ -32,6 +32,7 @@ class PrimeLicenciement
 
         // Age
         let primeAge = 0;
+        // On peut ajouter un test parent : if(age>45 && anciennete > 0)
         if(age >= 46 && age <= 49)
         {
             primeAge = dernierSalaire * 2;
