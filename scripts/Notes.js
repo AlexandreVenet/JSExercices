@@ -28,7 +28,7 @@ class Notes
         let moyenne = 0;
 
         for (let i = 0; i < nbreNotes; i++) {
-            let note = SaisirNombre(`Note ${i} : veuillez entrer une note dans l'intervalle [0,20] (si > 20 alors 20).`);
+            let note = SaisirNombre(`Note ${i+1} : veuillez entrer une note dans l'intervalle [0,20] (si > 20 alors 20).`);
             note = Math.abs(Math.trunc(note));
             if(note > 20) note = 20;
             toutesNotes.push(note);
@@ -42,7 +42,7 @@ class Notes
         let chaine = `La série comprend ${nbreNotes} note(s).<br>\n`;
         chaine += "<ul>\n";
         for (let i = 0; i < nbreNotes; i++) {
-            chaine += `\t<li>Note ${i} : ${toutesNotes[i]}/20</li>\n`;
+            chaine += `\t<li>Note ${i+1} : ${toutesNotes[i]}/20</li>\n`;
         }
         chaine += "</ul>\n";
 
