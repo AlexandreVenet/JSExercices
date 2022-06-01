@@ -39,7 +39,7 @@ class Notes
 
         // console.log(`Toutes notes : ${toutesNotes}`);
         
-        let chaine = `La série comprend ${nbreNotes} notes.<br>\n`;
+        let chaine = `La série comprend ${nbreNotes} note(s).<br>\n`;
         chaine += "<ul>\n";
         for (let i = 0; i < nbreNotes; i++) {
             chaine += `\t<li>Note ${i} : ${toutesNotes[i]}/20</li>\n`;
