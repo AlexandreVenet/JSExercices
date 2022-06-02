@@ -37,7 +37,7 @@ class Etudiants
 
             let classeCSS = "rouge";
             if(moyenne >= 10) classeCSS = "vert";
-            chaine += `<p class="${classeCSS}">Moyenne générale : ${Arrondir(moyenne,2)}/20</p><br>`;
+            chaine += `<p class="${classeCSS}">Moyenne générale : ${Arrondir(moyenne,1).toFixed(2)}/20</p><br>`;
         }
 
         AddHTML(chaine);
