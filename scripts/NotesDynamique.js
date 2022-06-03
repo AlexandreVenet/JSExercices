@@ -16,7 +16,7 @@ class NotesDynamique
         let moyenne = 0;
 
         while (true) {
-            note = SaisirNombre(`Veuillez entrer une note dans l'intervalle [0,20] (si > 20 alors 20).`);
+            note = SaisirNombre(`Veuillez entrer une note dans l'intervalle [0,20] (si > 20 alors 20). Entrer 777 pour quitter.`);
             if(note == 777) break;
             note = Math.abs(Math.trunc(note));
             if(note > 20) note = 20;
