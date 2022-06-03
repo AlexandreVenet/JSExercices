@@ -1,3 +1,12 @@
+:root
+{
+    --rouge:crimson;
+    --vert:forestgreen;
+    --bleu:cornflowerblue;
+    --gris:grey;
+    --blanc:white;
+}
+
 *
 {
     margin:0;
@@ -138,7 +147,7 @@ img
 }
 main a
 {
-    color:cornflowerblue;
+    color:var(--bleu);
 }
 ul li, ol li
 {
@@ -148,11 +157,53 @@ ul, ol
 {
     margin:0.5em 0;
 }
+button
+{
+    padding:0.9em 1.2em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    margin-bottom:0.5em;
+}
+button:hover
+{
+    opacity: 0.85;
+}
+
+
+
 .rouge
 {
-    color: crimson;
+    color: var(--rouge);
 }
 .vert
 {
-    color:forestgreen;
+    color:var(--vert);
+}
+.bleu
+{
+    color:var(--bleu);
+}
+.gris
+{
+    color:var(--gris);
+}
+.blanc
+{
+    color:var(--blanc);
+}
+.backgroundRouge
+{
+    background-color: var(--rouge);
+}
+.backgroundVert
+{
+    background-color: var(--vert);
+}
+.backgroundBleu
+{
+    background-color: var(--bleu);
+}
+.backgroundGris
+{
+    background-color: var(--gris);
 }

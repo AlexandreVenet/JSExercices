@@ -103,6 +103,20 @@ function AddHTML(texte, colorClass = null)
     DOMmain.scrollTo(0, DOMmain.scrollHeight);
 }
 
+// Ajouter du contenu HTML (idem précédent) mais SANS paragraphe ni contrôle couleur
+// Ceci pour librement structurer le DOM
+function AddHTMLNoP(texte)
+{
+    // Afficher en bas de la div et scroller
+    DOMmain.innerHTML += 
+    `<div>
+        <h2>${titleToDisplay}<span> - ${subTitleToDisplay}</span></h2>
+        ${texte}
+    </div>`;
+
+    DOMmain.scrollTo(0, DOMmain.scrollHeight);
+}
+
 
 // Saisie utilisateur : un nombre
 function SaisirNombre(texte)
