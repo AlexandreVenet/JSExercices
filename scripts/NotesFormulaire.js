@@ -70,7 +70,7 @@ class NotesFormulaire
         this.DOMSorties.innerHTML = "";
 
         while (true) {
-            note = SaisirNombre(`Veuillez entrer une note dans l'intervalle [0,20] (si > 20 alors 20). Entrer 777 pour quitter.`);
+            note = SaisirNombre(`Veuillez entrer une note ${this.toutesNotes.length+1} dans l'intervalle [0,20] (si > 20 alors 20). Entrer 777 pour quitter.`);
             if(note == 777) break;
             note = Math.abs(Math.trunc(note));
             if(note > 20) note = 20;
