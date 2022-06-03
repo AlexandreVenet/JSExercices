@@ -43,11 +43,9 @@ class NotesFormulaire
         this.DOMcontenus = document.querySelector(`#${contenusID}`);
         this.DOMSorties = document.querySelector(`#${sortiesID}`);
 
-        // Evénements
-        DOMsaisirNotes.addEventListener("click",(e)=>
-        {   
-            this.SaisirNotes();
-        });
+        // Evénements 
+        // Dans une classe, 2 syntaxes : fonction fléchée ou .bind(this)
+        DOMsaisirNotes.addEventListener("click",this.SaisirNotes.bind(this));
         DOMmeilleureNote.addEventListener("click",(e)=>
         {   
             this.AfficherMinMax("Meilleur");
@@ -56,11 +54,7 @@ class NotesFormulaire
         {   
             this.AfficherMinMax("Pire");
         });
-        DOMmoyenneNotes.addEventListener("click",(e)=>
-        {   
-            this.AfficherMoyenne();
-        });
-        
+        DOMmoyenneNotes.addEventListener("click",this.AfficherMoyenne.bind(this));
     }
 
     /**
